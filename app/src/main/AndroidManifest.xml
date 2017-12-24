@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sumberrejeki.webviewadam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+
+
+    <application
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTop">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="com.sumberrejeki.webviewadam" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Halaman01Activity"
+            android:theme="@style/AppTheme2"
+            android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sumberrejeki.webviewadam.MainActivity" />
+        </activity>
+        <activity android:name=".WelcomingActivity" />
+        <activity android:name=".SurveyActivity" />
+        <activity android:name=".SurveyDuaActivity" />
+        <activity android:name=".Halaman02Activity"></activity>
+    </application>
+
+</manifest>

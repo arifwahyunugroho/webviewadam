@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Webview Adam V.1.0</string>
+    <string name="url_developer">https://play.google.com/store/apps/developer?id=NAMA+DEVELOPER</string>
+    <string name="url_apps">https://play.google.com/store/apps/details?id=com.NAMADEVELOPER.NAMAAPPS</string>
+    <string name="startwelcoming">START</string>
+
+    <string name="survey01">Are you sure need this Awesome Apps?</string>
+    <string name="yessure">YES</string>
+    <string name="nothing">NO</string>
+
+    <string name="survey02">How Old are you?</string>
+    <string name="under13">Under 13 Years</string>
+    <string name="olderthan13">Older than 13 Years</string>
+
+    <string name="banner_ad_unit_id01">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="review_apps">Please Review!</string>
+    <string name="share_apps">Share This Apps!</string>
+    <string name="more_apps">More Apps</string>
+    <string name="share_this_apps">Share This Apps!</string>
+</resources>

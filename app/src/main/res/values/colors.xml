@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="warnasplash">#205aaf</color>
+    <color name="warnainti">#205aaf</color>
+    <color name="warnatoolbar">#205aaf</color>
+    <color name="warnaintigelap">#1e4680</color>
+
+    <color name="warnabackground">#f6f6f6</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+</resources>
