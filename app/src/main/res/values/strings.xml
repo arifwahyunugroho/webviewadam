@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Webview Adam V.1.0</string>
+    <string name="app_name">Webview Adam V.1.1</string>
     <string name="url_developer">https://play.google.com/store/apps/developer?id=NAMA+DEVELOPER</string>
     <string name="url_apps">https://play.google.com/store/apps/details?id=com.NAMADEVELOPER.NAMAAPPS</string>
     <string name="startwelcoming">START</string>
@@ -14,6 +14,8 @@
 
     <string name="banner_ad_unit_id01">ca-app-pub-3940256099942544/6300978111</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="startapp_id">KOSONG</string>
 
     <string name="review_apps">Please Review!</string>
     <string name="share_apps">Share This Apps!</string>

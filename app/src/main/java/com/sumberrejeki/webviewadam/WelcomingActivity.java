@@ -25,6 +25,9 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.startapp.android.publish.ads.splash.SplashConfig;
+import com.startapp.android.publish.adsCommon.StartAppAd;
+import com.startapp.android.publish.adsCommon.StartAppSDK;
 
 public class WelcomingActivity extends AppCompatActivity {
 
@@ -39,10 +42,23 @@ public class WelcomingActivity extends AppCompatActivity {
 
     Intent intent;
 
+    //    AdView mAddViewban;
+    private StartAppAd startAppAd = new StartAppAd(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Startapp ------------------------------------------------------------------------------------
+        StartAppSDK.init(this, getResources().getString(R.string.startapp_id), true);
+        StartAppAd.showSplash(this, savedInstanceState,
+                new SplashConfig()
+                        .setTheme(SplashConfig.Theme.USER_DEFINED)
+                        .setCustomScreen(R.layout.activity_splashscreen)
+//                        .setLogo(R.drawable.splashscreen)
+        );
+
+
         setContentView(R.layout.activity_welcoming);
 
         addShortcut();
